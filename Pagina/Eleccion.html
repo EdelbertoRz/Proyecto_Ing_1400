@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Diseño.css" rel="stylesheet">
+<link href="css/Eleccion.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.lazyload.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $("a[href*='#CardContainer1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#CardContainer1').offset().top }, 600, 'easeOutExpo');
+   });
+   $('img[data-src]').lazyload();
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2" style="display:inline-block;width:67px;height:67px;z-index:0;">
+<img src="images/placeholder.gif" data-src="images/xdxdxd.png" data-src-retina="images/Logo.png" id="Image2" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./Menu-C.html" class="nav-link">INICIO</a>
+</li>
+<li class="nav-item">
+<a href="./Menu.html" class="nav-link">CERRAR SESION</a>
+</li>
+<li class="nav-item">
+<a href="./Sobre-nosotros-C.html" class="nav-link">SOBRE NOSOTROS</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_CardContainer1">
+<div id="CardContainer1">
+<div id="wb_Card1" style="display:flex;text-align:right;z-index:2;">
+   <div id="Card1-card-body">
+      <img id="Card1-card-item0" src="images/t2.png" alt="" title="">
+      <div id="Card1-card-item1">Realizar compra con</div>
+      <hr id="Card1-card-item2">
+      <div id="Card1-card-item3"><a href="./Menu-C.html"><i class="fa fa-credit-card"></i> Transferencia</a></div>
+   </div>
+</div>
+<div id="wb_Card4" style="display:flex;text-align:right;z-index:3;">
+   <div id="Card4-card-body">
+      <img id="Card4-card-item0" src="images/t1.png" alt="" title="">
+      <div id="Card4-card-item1">Realizar compra con</div>
+      <hr id="Card4-card-item2">
+      <div id="Card4-card-item3"><a href="./Menu-C.html"><i class="fa fa-money"></i> Efectivo</a></div>
+   </div>
+</div>
+<div id="wb_Card5" style="display:flex;text-align:right;z-index:4;">
+   <div id="Card5-card-body">
+      <img id="Card5-card-item0" src="images/T3.png" alt="" title="">
+      <div id="Card5-card-item1">Cambiar Tarjeta o Direccion</div>
+      <hr id="Card5-card-item2">
+      <div id="Card5-card-item3"><a href="./Pagar-C.html"><i class="fa fa-user-circle-o"></i> Actualizar Datos</a></div>
+   </div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image3" style="display:inline-block;width:66px;height:66px;z-index:5;">
+<img src="images/placeholder.gif" data-src="images/xdxdxd.png" data-src-retina="images/Logo.png" id="Image3" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
