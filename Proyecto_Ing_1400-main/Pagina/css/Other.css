@@ -1,0 +1,692 @@
+#wb_intro
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background-color: transparent;
+   background-image: url('../images/Banner PS1.1.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#intro
+{
+   box-sizing: border-box;
+   height: 100vh;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   padding: 75px 0px 75px 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#intro > .col1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#intro > .col1
+{
+   -webkit-flex: 0 0 auto;
+   flex: 0 0 auto;
+}
+#intro > .col1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   flex-basis: 100%;
+   max-width: 100%;
+   display: -webkit-flex;
+   -webkit-flex-wrap: wrap;
+   -webkit-align-content: center;
+   -webkit-align-self: stretch;
+   -webkit-align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+@media (max-width: 480px)
+{
+#wb_intro, #intro
+{
+   height: auto;
+}
+#intro > div[class^="col-"]
+{
+   height: 100vh;
+}
+#intro > .col1
+{
+   -webkit-flex-basis: 100% !important;
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+
+.wb_coffee {
+   background-color: #403832;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   position: relative;
+}
+.coffee {
+   display: -webkit-flex;
+   display: flex;
+   position: relative;
+   padding: 65px 10px 65px 10px;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   -webkit-align-items: stretch;
+   align-items: stretch;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+   box-sizing: border-box;
+   font-size: 0px;
+}
+@media all and (max-width:480px) 
+{
+#coffee
+{
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+}}}
+
+#wb_contact
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: url('../images/Banner PS2.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border-top-width: 0px;
+   border-right-width: 0px;
+   border-bottom-width: 1px;
+   border-left-width: 0px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #C2C1C1;
+   border-right-color: #C2C1C1;
+   border-bottom-color: #C2C1C1;
+   border-left-color: #C2C1C1;
+   box-sizing: border-box;
+   margin: 0;
+}
+#contact
+{
+   box-sizing: border-box;
+   padding: 75px 15px 75px 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#contact > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#contact > .row > .col1, #contact > .row > .col2, #contact > .row > .col-3
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#contact > .row > .col1, #contact > .row > .col2, #contact > .row > .col-3
+{
+   float: left;
+}
+#contact > .row > .col1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
+}
+#contact > .row > .col2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
+}
+#contact > .row > .col-3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 33.33333333%;
+   text-align: left;
+}
+#contact:before,
+#contact:after,
+#contact .row:before,
+#contact .row:after
+{
+   display: table;
+   content: " ";
+}
+#contact:after,
+#contact .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#contact > .row > .col1, #contact > .row > .col2, #contact > .row > .col-3
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#contact-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #403832;
+   opacity: 0.49;
+}
+#contact-divider-top
+{
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 50px;
+   line-height: 0;
+   left: 0;
+   transform: scaleY(-1.0);
+}
+#contact-divider-top svg
+{
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#contact-divider-top .divider-fill
+{
+   fill: #403832;
+   transform-origin: bottom;
+   transform: rotateY(0deg);
+}
+#contact-divider-bottom
+{
+   overflow: hidden;
+   position: absolute;
+   line-height: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+}
+#contact-divider-bottom svg
+{
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+}
+#contact-divider-bottom .divider-fill
+{
+   fill: #000000;
+   transform-origin: bottom;
+   transform: rotateY(0deg);
+}
+#contactLabel1
+{
+   border: 0px solid #000000;
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 17px;
+   box-sizing: border-box;
+   padding: 0px 0px 20px 0px;
+   margin: 30px 0px 0px 0px;
+   text-align: left;
+   vertical-align: top;
+}
+#contactLabel4
+{
+   border: 0px solid #000000;
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 17px;
+   box-sizing: border-box;
+   padding: 0px 0px 10px 0px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#wb_contactAddress 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0px 0px 20px 0px;
+   margin: 0;
+   text-align: left;
+}
+#wb_contactAddress
+{
+   color: #EDE9E1;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+}
+#wb_contactAddress p, #wb_contactAddress ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_contactAddress
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_contactIcon2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #EDE9E1;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0px 5px 0px 0px;
+   padding: 6px 6px 6px 6px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_contactIcon2:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #645E59;
+}
+#contactIcon2
+{
+   height: 30px;
+   width: 30px;
+}
+#contactIcon2 i
+{
+   color: #EDE9E1;
+   display: inline-block;
+   font-size: 30px;
+   line-height: 30px;
+   vertical-align: middle;
+   width: 16px;
+}
+#wb_contactIcon2:hover i
+{
+   color: #645E59;
+}
+#wb_IconFont1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #EDE9E1;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0px 5px 0px 0px;
+   padding: 6px 6px 6px 6px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_IconFont1:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #645E59;
+}
+#IconFont1
+{
+   height: 34px;
+   width: 29px;
+}
+#IconFont1 i
+{
+   color: #EDE9E1;
+   display: inline-block;
+   font-size: 29px;
+   line-height: 34px;
+   vertical-align: middle;
+   width: 24px;
+}
+#wb_IconFont1:hover i
+{
+   color: #645E59;
+}
+#contactLabel3
+{
+   border: 0px solid #000000;
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 17px;
+   box-sizing: border-box;
+   padding: 0px 0px 20px 0px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#contactEmail
+{
+   border: 1px solid #FFFFFF;
+   background-color: #403832;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   box-sizing: border-box;
+   line-height: 16px;
+   padding: 10px 10px 10px 10px;
+   margin: 0px 0px 15px 0px;
+   text-align: left;
+}
+#contactEmail::placeholder
+{
+   color: #FFFFFF;
+   opacity: 1;
+}
+#contactEmail::-ms-input-placeholder
+{
+   color: #FFFFFF;
+}
+#contactButton
+{
+   border: 1px solid #FFFFFF;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #403832;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 15px;
+   padding: 1px 1px 6px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#contactName
+{
+   border: 1px solid #FFFFFF;
+   background-color: #403832;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   box-sizing: border-box;
+   line-height: 16px;
+   padding: 10px 10px 10px 10px;
+   margin: 0px 0px 15px 0px;
+   text-align: left;
+}
+#contactName::placeholder
+{
+   color: #FFFFFF;
+   opacity: 1;
+}
+#contactName::-ms-input-placeholder
+{
+   color: #FFFFFF;
+}
+#contactMessage
+{
+   border: 1px solid #FFFFFF;
+   background-color: #403832;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 16px;
+   box-sizing: border-box;
+   padding: 10px 10px 10px 10px;
+   margin: 0px 0px 15px 0px;
+   text-align: left;
+   overflow: auto;
+   resize: none;
+}
+#contactMessage::placeholder
+{
+   color: #FFFFFF;
+   opacity: 1;
+}
+#contactMessage::-ms-input-placeholder
+{
+   color: #FFFFFF;
+}
+
+
+.container1{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){
+   .container1{max-width:540px}}@media (min-width:768px){.container1{max-width:720px}}@media (min-width:992px){
+      .container1{max-width:960px}}@media (min-width:1200px){.container1{max-width:1140px}}
+
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1050;
+   display: none;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   outline: 0;
+}
+
+.modal-open{overflow:hidden}
+.modal-open .modal{overflow-x:hidden;overflow-y:auto}
+.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}
+.modal-dialog{position:relative;width:auto;margin:.5rem;pointer-events:none;top:22%}
+.modal-content{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;background-clip:padding}
+.modal-dialog-scrollable .modal-content{max-height:calc(100vh - 1rem);overflow:hidden}
+.modal-header {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-align: start;
+   align-items: flex-start;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   padding: 1rem 1rem;
+   border-bottom: 1px solid #dee2e6;
+   border-top-left-radius: calc(.3rem - 1px);
+   border-top-right-radius: calc(.3rem - 1px);
+}
+.modal-title {
+   margin-bottom: 0;
+   line-height: 1.5;
+}
+.modal-header .close {
+   padding: 1rem 1rem;
+   margin: -1rem -1rem -1rem auto;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+   cursor: pointer;
+}
+button.close {
+   padding: 0;
+   background-color: transparent;
+   border: 0;
+}
+.close {
+   float: right;
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 1;
+   color: #000;
+   text-shadow: 0 1px 0 #fff;
+   opacity: .5;
+}
+.modal-body {
+   position: relative;
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 1rem;
+}
+.modal-footer {
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -ms-flex-align: center;
+   align-items: center;
+   -ms-flex-pack: end;
+   justify-content: flex-end;
+   padding: .75rem;
+   border-top: 1px solid #dee2e6;
+   border-bottom-right-radius: calc(.3rem - 1px);
+   border-bottom-left-radius: calc(.3rem - 1px);
+}
+.modal-footer>* {
+   margin: .25rem;
+}
+.btn-danger {
+   color: #fff;
+   background-color: #dc3545;
+   border-color: #dc3545;
+}
+.btn {
+   display: inline-block;
+   font-weight: 400;
+   color: #212529;
+   text-align: center;
+   vertical-align: middle;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-color: transparent;
+   border: 1px solid transparent;
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   border-radius: .25rem;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:not(:disabled):not(.disabled) {
+   cursor: pointer;
+}
+[type=button], [type=reset], [type=submit], button {
+   -webkit-appearance: button;
+}
+
+.nav-item > button {
+   text-transform: none;
+}
+
+.nav-item > button {
+   overflow: visible;
+}
+
+.modal-backdrop.show {
+   opacity: .5;
+}
+.modal-backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1040;
+   width: 100vw;
+   height: 100vh;
+   background-color: #000;
+}
+
+.modal.show .modal-dialog {
+   -webkit-transform: none;
+   transform: none;
+}
+.modal.fade .modal-dialog {
+   transition: -webkit-transform .3s ease-out;
+   transition: transform .3s ease-out;
+   transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+   -webkit-transform: translate(0,-50px);
+   transform: translate(0,-50px);
+}
+@media (min-width: 576px){
+   .modal-dialog {
+       max-width: 500px;
+       margin: 1.75rem auto;
+   }
+}
+@media (min-width:992px){.modal-lg{max-width:800px}}
+
+.modal-body > div label{
+   color: #000;
+}
+
+#clos{
+   background-color: rgb(36, 152, 230);
+}
+#clos:hover{
+   background-color: rgb(19, 50, 223);
+}

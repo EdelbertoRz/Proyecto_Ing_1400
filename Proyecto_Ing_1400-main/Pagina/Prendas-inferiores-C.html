@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/Other.css">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="css/sweetalert2.min.css">
+      <script src="js/popper.min.js"></script>
+      <style>
+            .wb_coffee {
+                background-color: #403832;
+                background-image: none;
+                border: 0px solid #CCCCCC;
+                box-sizing: border-box;
+                position: relative;
+            }
+            .coffee {
+                display: -webkit-flex;
+                display: flex;
+                position: relative;
+                padding: 65px 10px 65px 10px;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+                -webkit-align-items: stretch;
+                align-items: stretch;
+                -webkit-align-content: flex-start;
+                align-content: flex-start;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 1140px;
+                box-sizing: border-box;
+                }
+
+      </style>
+  
+      <title>Prendas-inferiores-C</title>
+  </head>
+
+<body>
+   <header>
+      <div class="container">
+          <div class="row align-items-stretch justify-content-between">
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                  <a class="navbar-brand" href="Menu-C.html">MOSTDREAMYGIRL</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item dropdown">
+                              <img src="images/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                  width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false"></img>
+                              <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                  <table id="lista-carrito" class="table">
+                                      <thead>
+                                          <tr>
+                                              <th>Imagen</th>
+                                              <th>Nombre</th>
+                                              <th>Precio</th>
+                                              <th></th>
+                                          </tr>
+                                      </thead>
+                                      <tbody></tbody>
+                                  </table>
+
+                                  <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                  <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                      Compra</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </header>
+
+  <div id="wb_intro">
+    <div id="intro">
+    <div class="col1">
+    <div id="wb_Card6" style="display:inline-block;width:496px;height:94px;text-align:center;z-index:2;">
+       <div id="Card6-card-body">
+          <div id="Card6-card-item0"><h1>PRENDAS INFERIORES</h1></div>
+       </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="wb_coffee">
+        <div class="coffee">
+            <main>
+                <!--
+                        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+          
+                        <h1 class="display-4 mt-4">Prendas Inferiores</h1>
+                        <p class="lead">Solamente disponible talla y color descrita en imagen</p>
+                    </div>
+                    -->
+          
+                <div class="container" id="lista-productos">
+                    
+                    <div class="card-deck mb-3 text-center">
+                        
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Red pant</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/20.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">350</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: M</li>
+                                    <li>Color: Rojo</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-toggle="modal" data-target="#myModal" data-id="1">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Black mom jean </h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/21.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">450</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: S</li>
+                                    <li>Color: Negro</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-toggle="modal" data-target="#myModal" data-id="2">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Black pant</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/22.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">340</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: M</li>
+                                    <li>Color: Negro</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                            </div>
+                        </div>
+          
+                    </div>
+          
+                    <div class="card-deck mb-3 text-center">
+                        
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Rose pant pant</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/23.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">330</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: S</li>
+                                    <li>Color: Rosado </li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Tropical pant</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/24.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">330</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: M</li>
+                                    <li>Color V,B,N</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Polka dots adjustable short</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/25.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">350</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: M</li>
+                                    <li>Color: Verde</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+          
+                    <div class="card-deck mb-3 text-center">
+                        
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Falda short a rayas</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/26.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">300</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: S</li>
+                                    <li>Color: R,B,N</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Olive culotte</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/27.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">400</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: S</li>
+                                    <li>Color: Verde</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                            </div>
+                        </div>
+          
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h4 class="my-0 font-weight-bold">Mom fit</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="images/28.jpg" class="card-img-top">
+                                <h1 class="card-title pricing-card-title precio">L. <span class="">400</span></h1>
+          
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li></li>
+                                    <li>Talla: M</li>
+                                    <li>Color: AZul</li>
+                                </ul>
+                                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                            </div>
+                        </div>
+          
+                    </div>
+          
+          
+                </div>
+            </main>
+       </div>
+    </div>
+
+    
+    <div id="wb_contact">
+        <div id="contact-overlay"></div>
+        <div id="contact-divider-top">
+        <svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="divider-fill" d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+            </path>
+        </svg></div>
+        <div id="contact-divider-bottom">
+        <svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path class="divider-fill" d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+            </path>
+        </svg></div>
+        <div id="contact">
+        <div class="row">
+        <div class="col1">
+        <label for="contactIcon2" id="contactLabel4" style="display:inline-block;width:275px;line-height:19px;z-index:12;">Informacion</label>
+        <div id="wb_contactAddress">
+        <p style="font-size:13px;line-height:16px;color:#EDE9E1;">Puedes encontrarnos en el siguiente enlace<span style="color:#EDE9E1;"><br /></span><span style="color:#EDE9E1;"><br /></span>Gracias por visitarnos</p>
+        <p style="font-size:13px;line-height:16px;">&nbsp;</p>
+        </div>
+        <label for="contactIcon2" id="contactLabel1" style="display:block;width:100%;line-height:19px;z-index:14;">Siguenos</label>
+        <div id="wb_contactIcon2" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:15;">
+        <a href="https://www.facebook.com/Most-Dreamy-Girl-100801518237693/"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
+        </div>
+        <div id="wb_IconFont1" style="display:inline-block;width:29px;height:34px;text-align:center;z-index:16;">
+        <a href="https://www.instagram.com/mostdreamygirl/"><div id="IconFont1"><i class="fa fa-instagram"></i></div></a>
+        </div>
+        </div>
+        <div class="col2">
+        </div>
+        <div class="col-3">
+        <label for="contactIcon2" id="contactLabel3" style="display:inline-block;width:275px;line-height:19px;z-index:17;">Contactanos</label>
+        <input type="text" id="contactName" style="display:block;width: 100%;height:38px;z-index:18;" name="Nombre" value="" spellcheck="false" placeholder="Nombre">
+        <input type="text" id="contactEmail" style="display:block;width: 100%;height:38px;z-index:19;" name="Correo" value="" spellcheck="false" placeholder="Correo">
+        <textarea name="Mensaje" id="contactMessage" style="display:block;width: 100%;;height:85px;z-index:20;" rows="2" cols="25" autocomplete="off" spellcheck="false" placeholder="Mensaje"></textarea>
+        <input type="submit" id="contactButton" name="" value="Enviar" style="display:block;width: 100%;;height:34px;z-index:21;">
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container1">
+ 
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Producto</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <div>
+                          <div>
+                              <label>Código del Producto</label><br>
+                              <label for="">02311</label><br><br>
+             
+                              <label>Tipo de Prenda</label><br>
+                              <label for="">Short</label><br><br>
+                              <label>Descripción</label><br>
+                              <p>
+                                  lbajshbdkhas<br>
+                                  jhbasjhdjahs<br>
+                                  jhasjd
+                              </p>
+                              
+                          </div>
+                          <div style="position: absolute;left: 45%;top:5%;">
+                              <label>Precio</label><br>
+                              <label for="">350</label><br><br>
+                              
+                              <label>Estado</label><br>
+                              <label for="">Disponible</label><br><br>
+                              
+             
+                              <label>Talla &nbsp</label><br>
+                              <input type="radio" >
+                              <label>S</label>
+                              <input type="radio">
+                              <label>XS</label>
+
+                          </div>
+                          <div style="position: absolute;top: 5%;left: 65%;">
+                              
+                              <div style="background-color: rgb(197, 195, 195);width: 160px;height: 185px;position:absolute;top: 30px;"></div>
+                          </div>
+                      </div>
+                     
+                  </div>
+                  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button id="clos" type="button" class="btn btn-danger agregar-c" data-dismiss="modal">Agregar a Carrito</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+</body>
+</html>

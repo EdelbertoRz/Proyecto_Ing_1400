@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/Diseño.css" rel="stylesheet">
+<link href="css/Inventario.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+<style>
+   th,td {
+       padding: 0.4rem !important;
+   }
+   body> .container1 {
+       box-shadow: 10px 10px 8px #888888;
+       border: 2px solid black;
+       border-radius: 10px;
+   }
+   .uno{
+       background-color: rgb(202, 14, 14);
+       border-radius: 5px;
+       margin-right: 5px;
+       margin-left: 10px;
+   }
+   .dos{
+       background-color: rgb(9, 129, 199);
+       border-radius: 5px;
+   }
+</style>
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.lazyload.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+</script>
+<!-- DATATABLES -->
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js">
+</script>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js">
+</script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutExpo');
+   });
+   $('#headerMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.headerMenu-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $('img[data-src]').lazyload();
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row1">
+<div class="col-1">
+<div id="wb_Image2" style="display:inline-block;width:67px;height:67px;z-index:0;">
+<img src="images/placeholder.gif" data-src="images/xdxdxd.png" data-src-retina="images/Logo.png" id="Image2" alt="">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:1;">
+<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".headerMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./Menu-AD.html" class="nav-link">INICIO</a>
+</li>
+<li class="nav-item">
+<a href="./Sobre-nosotros.html" class="nav-link">SOBRE NOSOTROS</a>
+</li>
+<li class="nav-item">
+<a href="./Notificaciones.html" class="nav-link"><i class="fa fa-bell"></i> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row1">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong>PEDIDOS</strong></span>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:3;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+    <!--
+    <li class="nav-item">
+    <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="color: white;
+    background-color: green;">AGREGAR</button>
+    </li>
+
+   <li class="nav-item">
+   <a href="./Eliminar.html" class="nav-link">ELIMINAR</a>
+   </li>
+   <li class="nav-item">
+   <a href="./Actualizar.html" class="nav-link">ACTUALIZAR</a>
+   </li>
+-->
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact-overlay"></div>
+<div id="contact-divider-top">
+<svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="divider-fill" d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+    </path>
+</svg></div>
+<div id="contact-divider-bottom">
+<svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="divider-fill" d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+    </path>
+</svg></div>
+   <div id="contact">
+      <div class="row1">
+         <div class="container1" style="margin-top: 10px;padding: 5px">
+            <table id="tablax" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Dirección</th>
+                    <th>Monto</th>
+                    <th>Tipo de Pago</th>
+                    <th>Estado</th>
+                    <th>Estado Entrega</th>
+                    <th>Acción</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Andrea J</td>
+                        <td>Camisa tipo P</td>
+                        <td>Carrizal</td>
+                        <td>12</td>
+                        <td>Efectivo</td>
+                        <td>Pagado</td>
+                        <td>En proceso</td>
+                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rosa</td>
+                        <td>Falda</td>
+                        <td>Las Torres</td>
+                        <td>129</td>
+                        <td>Trasferencia</td>
+                        <td>Pagado</td>
+                        <td>En proceso</td>
+                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Alejandra</td>
+                        <td>Shorts</td>
+                        <td>Centroamerica</td>
+                        <td>19</td>
+                        <td>Tarjeta Credito</td>
+                        <td>Pagado</td>
+                        <td>En proceso</td>
+                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Maria</td>
+                        <td>Vestido</td>
+                        <td>Centroamerica</td>
+                        <td>12</td>
+                        <td>Tarjeta Debito</td>
+                        <td>Pagado</td>
+                        <td>En proceso</td>
+                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Lili</td>
+                        <td>Camisa</td>
+                        <td>Centroamerica</td>
+                        <td>129</td>
+                        <td>Tarjeta</td>
+                        <td>Pagado</td>
+                        <td>En proceso</td>
+                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+      </div>
+   </div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row1">
+<div class="col-1">
+<div id="wb_Image3" style="display:inline-block;width:66px;height:66px;z-index:7;">
+<img src="images/placeholder.gif" data-src="images/xdxdxd.png" data-src-retina="images/Logo.png" id="Image3" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+ 
+   <!-- The Modal -->
+   <div class="modal" id="myModal">
+     <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+       
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h4 class="modal-title">Agregar Producto</h4>
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+         
+         <!-- Modal body -->
+         <div class="modal-body">
+             <div>
+                 <div>
+                     <label>Código del Producto</label><br>
+                     <input placeholder="Código"></input><br><br>
+    
+                     <label>Tipo de Prenda</label><br>
+                     <input placeholder="Prenda"></input><br><br>
+                     <label>Descripción</label><br>
+                     <textarea name="" id="" cols="30" rows="7" placeholder="Breve Descripción"></textarea>
+                 </div>
+                 <div style="position: absolute;left: 40%;top:6%;">
+                     <label>Precio</label><br>
+                     <input type="text" placeholder="Precio"></input><br><br>
+                     <label>Stock</label><br>
+                     <input type="text" placeholder="Cantidad"></input><br><br>
+    
+                     <label>Talla &nbsp</label>
+                     <select name="" id="">
+                         <option value="">XS</option>
+                         <option value="">M</option>
+                         <option value="">XL</option>
+                         <option value="">S</option>
+                      </select><br><br>
+                      
+    
+                      <label>Categoria &nbsp</label>
+                      <select name="" id="">
+                          <option value="">Inferior</option>
+                          <option value="">Superior</option>
+                          <option value="">Vestido</option>
+                       </select><br><br>
+
+                       <div class="custom-control custom-switch">
+                        <input  type="checkbox" class="custom-control-input" id="switch1" name="example">
+                        <label class="custom-control-label" for="switch1">Oferta</label>
+                      </div>
+                      <div id="des" style="position: relative; display: none;">
+                          <label for="">Descuento &nbsp</label>
+                          <input type="text" placeholder="%" style="width: 35px;">
+                      </div>
+                 </div>
+                 <div style="position: absolute;top: 20%;left: 70%;">
+                     <label for="" style="margin-left: 45px;">Subir Imagen</label>
+                     <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
+                 </div>
+             </div>
+            
+         </div>
+         
+         <!-- Modal footer -->
+         <div class="modal-footer">
+           <button id="clos"type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+         </div>
+         
+       </div>
+     </div>
+   </div>
+   
+ </div>
+
+<script>
+   $(document).ready(function () {
+       $('#tablax').DataTable({
+           language: {
+               processing: "Tratamiento en curso...",
+               search: "Buscar&nbsp;:",
+               lengthMenu: "Agrupar de _MENU_ Productos",
+               info: "Mostrando del _START_ al _END_ de un total de _TOTAL_ Productos",
+               infoEmpty: "No existen datos.",
+               infoFiltered: "(filtrado de _MAX_ elementos en total)",
+               infoPostFix: "",
+               loadingRecords: "Cargando...",
+               zeroRecords: "No se encontraron datos con tu busqueda",
+               emptyTable: "No hay datos disponibles en la tabla.",
+               paginate: {
+                   first: "Primero",
+                   previous: "Anterior",
+                   next: "Siguiente",
+                   last: "Último"
+               },
+               aria: {
+                   sortAscending: ": active para ordenar la columna en orden ascendente",
+                   sortDescending: ": active para ordenar la columna en orden descendente"
+               }
+           },
+           scrollY: 400,
+           lengthMenu: [ [10, 25, -1], [10, 25, "All"] ],
+       });
+
+       $("#switch1").on("click",function(){
+           var a = document.querySelector("#des")
+           a.style.display = "block";
+            
+       });
+   });
+</script>
+</body>
+</html>
