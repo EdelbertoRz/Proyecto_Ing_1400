@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/Diseño.css" rel="stylesheet">
-<link href="css/Agregar-prenda.css" rel="stylesheet">
+<link href="css/Pagar-C.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.lazyload.min.js"></script>
@@ -27,6 +27,11 @@ $(document).ready(function()
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutExpo');
    });
    $('#headerMenu .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
    $(document).on('click','.headerMenu-navbar-collapse.show',function(e)
@@ -63,7 +68,13 @@ $(document).ready(function()
 <div class="headerMenu-navbar-collapse collapse">
 <ul class="nav navbar-nav">
 <li class="nav-item">
-<a href="./Menu-AD.html" class="nav-link">INICIO</a>
+<a href="./Menu-C.html" class="nav-link">INICIO</a>
+</li>
+<li class="nav-item">
+<a href="./Menu.html" class="nav-link">CERRAR SESION</a>
+</li>
+<li class="nav-item">
+<a href="./Sobre-nosotros-C.html" class="nav-link">SOBRE NOSOTROS</a>
 </li>
 </ul>
 </div>
@@ -89,29 +100,50 @@ $(document).ready(function()
 <div id="contact">
 <div class="row">
 <div class="col-1">
-<label for="" id="Label2" style="display:inline-block;width:245px;line-height:29px;z-index:2;">Agregar prenda</label>
-<label for="" id="Label3" style="display:inline-block;width:410px;line-height:19px;z-index:3;"> </label>
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:4;">
-<img src="images/placeholder.gif" data-src="images/Arrastre.png" data-src-retina="images/Arrastre.png" id="Image1" alt="">
+<label for="contactLabel4" id="contactLabel4" style="display:inline-block;width:175px;line-height:19px;z-index:2;">Informacion</label>
+<div id="wb_contactAddress">
+<p style="font-size:13px;line-height:16px;color:#EDE9E1;">Puedes encontrarnos en el siguiente enlace<span style="color:#EDE9E1;"><br /></span><span style="color:#EDE9E1;"><br /></span>Gracias por visitarnos</p>
 </div>
-<label for="" id="Label4" style="display:inline-block;width:174px;line-height:19px;z-index:5;"> </label>
-<input type="text" id="Editbox5" style="display:block;width: 100%;height:38px;z-index:6;" name="Nombre" value="" spellcheck="false" placeholder="Nombre de la prenda">
-<select name="Prenda superior" size="1" id="Combobox1" style="display:block;width: 100%;height:41px;z-index:7;">
-<option value="">Prenda superior</option>
-<option selected>Prenda inferior</option>
-<option>Vestidos</option>
+<label for="contactLabel4" id="contactLabel1" style="display:block;width:100%;line-height:19px;z-index:4;">Siguenos</label>
+<div id="wb_contactIcon2" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:5;">
+<a href="https://www.facebook.com/Most-Dreamy-Girl-100801518237693/"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_contactIcon4" style="display:inline-block;width:31px;height:34px;text-align:center;z-index:6;">
+<a href="https://www.instagram.com/mostdreamygirl/"><div id="contactIcon4"><i class="fa fa-instagram"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<label for="contactLabel4" id="Label2" style="display:inline-block;width:174px;line-height:19px;z-index:7;">Informacion</label>
+<input type="text" id="Editbox2" style="display:block;width: 100%;height:38px;z-index:8;" name="Numero de la tarjeta" value="" spellcheck="false" placeholder="Nombres">
+<input type="text" id="Editbox3" style="display:block;width: 100%;height:38px;z-index:9;" name="a" value="" spellcheck="false" placeholder="Apellidos">
+<input type="text" id="Editbox12" style="display:block;width: 100%;height:38px;z-index:13;" name="Telefono" value="" spellcheck="false" placeholder="Telefono">
+</div>
+<div class="col-3">
+<label for="contactLabel4" id="contactLabel3" style="display:inline-block;width:174px;line-height:19px;z-index:14;">Metodo de pago</label>
+<select name="Combobox1" size="1" id="Combobox1" style="display:block;width: 100%;height:41px;z-index:15;">
+   <option value="">PayPal</option>
+   <option selected>Visa</option>
+   <option>MasterCard</option>
+   <option>American Express</option>
+   <option>Discover</option>
+   <option>JCB</option>
 </select>
-<label for="" id="Label5" style="display:inline-block;width:940px;line-height:19px;z-index:8;"> </label>
-<a id="Button1" href="./Menu-C.html" style="display:inline-block;width:203px;height:32px;z-index:9;">Agregar</a>
+<label for="contactLabel4" id="Label1" style="display:inline-block;width:121px;line-height:19px;z-index:16;"> </label>
+<input type="text" id="Editbox1" style="display:block;width: 100%;height:38px;z-index:17;" name="Numero de la tarjeta" value="" spellcheck="false" placeholder="Numero de la tarjeta">
+<input type="text" id="Editbox5" style="display:block;width: 100%;height:38px;z-index:18;" name="Mes de Caducidad" value="" spellcheck="false" placeholder="Mes de Caducidad">
+<input type="text" id="Editbox6" style="display:block;width: 100%;height:38px;z-index:19;" name="Año de Caducidad" value="" spellcheck="false" placeholder="A&#241;o de Caducidad">
+<input type="text" id="Editbox7" style="display:block;width: 100%;height:38px;z-index:20;" name="Codigo de seguridad" value="" spellcheck="false" placeholder="Codigo de seguridad">
+<input type="submit" id="contactButton" name="Realizar pedido" value="Realizar pedido" style="display:block;width: 100%;height:34px;z-index:21;font-weight: bold;">
 </div>
 </div>
 </div>
 </div>
+
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image3" style="display:inline-block;width:66px;height:66px;z-index:10;">
+<div id="wb_Image3" style="display:inline-block;width:66px;height:66px;z-index:34;">
 <img src="images/placeholder.gif" data-src="images/xdxdxd.png" data-src-retina="images/Logo.png" id="Image3" alt="">
 </div>
 </div>

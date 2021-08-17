@@ -208,7 +208,7 @@ $(document).ready(function()
                         <td>Efectivo</td>
                         <td>Pagado</td>
                         <td>En proceso</td>
-                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                        <td><button class="uno">Eliminar</button><button  type="button" class="dos" data-toggle="modal" data-target="#myModalEdit">Editar</button></td>
                         
                     </tr>
                     <tr>
@@ -279,62 +279,49 @@ $(document).ready(function()
 <div class="container">
  
    <!-- The Modal -->
-   <div class="modal" id="myModal">
+   <div class="modal" id="myModalEdit">
      <div class="modal-dialog modal-lg">
        <div class="modal-content">
        
          <!-- Modal Header -->
          <div class="modal-header">
-           <h4 class="modal-title">Agregar Producto</h4>
+           <h4 class="modal-title">Editar Pedido</h4>
            <button type="button" class="close" data-dismiss="modal">&times;</button>
          </div>
          
          <!-- Modal body -->
          <div class="modal-body">
              <div>
-                 <div>
-                     <label>Código del Producto</label><br>
-                     <input placeholder="Código"></input><br><br>
+                <div style="position: relative;left: 10%;top:6%;">
+                     <label><b>Id</b></label><br>
+                     <input Value="1" style="width: 48px;" readonly></input><br><br>
     
-                     <label>Tipo de Prenda</label><br>
-                     <input placeholder="Prenda"></input><br><br>
-                     <label>Descripción</label><br>
-                     <textarea name="" id="" cols="30" rows="7" placeholder="Breve Descripción"></textarea>
+                     <label><b>Nombre del Cliente</b></label><br>
+                     <input placeholder="Nombre"></input><br><br>
+                     <label><b>Descripción</b></label><br>
+                     <input placeholder="Descripción" readonly></input><br><br>
+                     <label><b>Dirección</b></label><br>
+                     <textarea name="" id="" cols="30" rows="5" placeholder="Dirección"></textarea>
                  </div>
-                 <div style="position: absolute;left: 40%;top:6%;">
-                     <label>Precio</label><br>
-                     <input type="text" placeholder="Precio"></input><br><br>
-                     <label>Stock</label><br>
-                     <input type="text" placeholder="Cantidad"></input><br><br>
+                 <div style="position: absolute;left: 55%;top:6%;">
+                     <label><b>Monto</b></label><br>
+                     <input type="text" placeholder="Monto" readonly></input><br><br>
+                     <label><b>Tipo de Pago</b></label><br>
+                     <input type="text" placeholder="Tipo de Pago" readonly></input><br><br>
     
-                     <label>Talla &nbsp</label>
+                     <label><b>Estado</b></label><br>
                      <select name="" id="">
-                         <option value="">XS</option>
-                         <option value="">M</option>
-                         <option value="">XL</option>
-                         <option value="">S</option>
+                         <option value="">Pagado</option>
+                         <option value="">No Pagado</option>
                       </select><br><br>
                       
     
-                      <label>Categoria &nbsp</label>
+                      <label><b>Estado de Entrega</b></label><br>
                       <select name="" id="">
-                          <option value="">Inferior</option>
-                          <option value="">Superior</option>
-                          <option value="">Vestido</option>
+                          <option value="">Completada</option>
+                          <option value="">En Proceso</option>
                        </select><br><br>
 
-                       <div class="custom-control custom-switch">
-                        <input  type="checkbox" class="custom-control-input" id="switch1" name="example">
-                        <label class="custom-control-label" for="switch1">Oferta</label>
-                      </div>
-                      <div id="des" style="position: relative; display: none;">
-                          <label for="">Descuento &nbsp</label>
-                          <input type="text" placeholder="%" style="width: 35px;">
-                      </div>
-                 </div>
-                 <div style="position: absolute;top: 20%;left: 70%;">
-                     <label for="" style="margin-left: 45px;">Subir Imagen</label>
-                     <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
                  </div>
              </div>
             
@@ -380,11 +367,6 @@ $(document).ready(function()
            lengthMenu: [ [10, 25, -1], [10, 25, "All"] ],
        });
 
-       $("#switch1").on("click",function(){
-           var a = document.querySelector("#des")
-           a.style.display = "block";
-            
-       });
    });
 </script>
 </body>

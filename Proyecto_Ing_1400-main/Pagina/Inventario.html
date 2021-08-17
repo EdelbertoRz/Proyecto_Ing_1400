@@ -204,7 +204,7 @@ background-color: green;">AGREGAR</button>
                         <td>Ape2</td>
                         <td>12</td>
                         <td>12</td>
-                        <td><button class="uno">Eliminar</button><button class="dos">Editar</button></td>
+                        <td><button class="uno">Eliminar</button><button  type="button" class="dos" data-toggle="modal" data-target="#myModalEdit">Editar</button>
                         
                     </tr>
                     <tr>
@@ -346,21 +346,25 @@ background-color: green;">AGREGAR</button>
          <div class="modal-body">
              <div>
                  <div>
-                     <label>Código del Producto</label><br>
+                     <label><b>Código del Producto</b></label><br>
                      <input placeholder="Código"></input><br><br>
     
-                     <label>Tipo de Prenda</label><br>
-                     <input placeholder="Prenda"></input><br><br>
-                     <label>Descripción</label><br>
+                     <label><b>Tipo de Prenda</b></label><br>
+                     <select>
+                        <option value="">Vestido</option>
+                        <option value="">Camisa</option>
+                        <option value="">Blusa</option>
+                     </select><br><br>
+                     <label><b>Descripción</b></label><br>
                      <textarea name="" id="" cols="30" rows="7" placeholder="Breve Descripción"></textarea>
                  </div>
                  <div style="position: absolute;left: 40%;top:6%;">
-                     <label>Precio</label><br>
+                     <label><b>Precio</b></label><br>
                      <input type="text" placeholder="Precio"></input><br><br>
-                     <label>Stock</label><br>
+                     <label><b>Stock</b></label><br>
                      <input type="text" placeholder="Cantidad"></input><br><br>
     
-                     <label>Talla &nbsp</label>
+                     <label><b>Talla</b> &nbsp</label>
                      <select name="" id="">
                          <option value="">XS</option>
                          <option value="">M</option>
@@ -369,7 +373,7 @@ background-color: green;">AGREGAR</button>
                       </select><br><br>
                       
     
-                      <label>Categoria &nbsp</label>
+                      <label><b>Categoria</b> &nbsp</label>
                       <select name="" id="">
                           <option value="">Inferior</option>
                           <option value="">Superior</option>
@@ -378,15 +382,17 @@ background-color: green;">AGREGAR</button>
 
                        <div class="custom-control custom-switch">
                         <input  type="checkbox" class="custom-control-input" id="switch1" name="example">
-                        <label class="custom-control-label" for="switch1">Oferta</label>
+                        <label class="custom-control-label" for="switch1"><b>Oferta</b></label>
                       </div>
                       <div id="des" style="position: relative; display: none;">
-                          <label for="">Descuento &nbsp</label>
+                          <label for=""><b>Descuento</b> &nbsp</label>
                           <input type="text" placeholder="%" style="width: 35px;">
+                          <label> <b>&nbsp- &nbsp Precio con Descuento &nbsp</b></label>
+                          <input type="text" value="400" style="width: 43px;">
                       </div>
                  </div>
                  <div style="position: absolute;top: 20%;left: 70%;">
-                     <label for="" style="margin-left: 45px;">Subir Imagen</label>
+                     <label for="" style="margin-left: 45px;"><b>Subir Imagen</b></label>
                      <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
                  </div>
              </div>
@@ -403,6 +409,87 @@ background-color: green;">AGREGAR</button>
    </div>
    
  </div>
+
+ <div class="container">
+ 
+    <!-- The Modal -->
+    <div class="modal" id="myModalEdit">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Editar Producto</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+              <div>
+                  <div>
+                      <label><b>Código del Producto</b></label><br>
+                      <input placeholder="Código"></input><br><br>
+     
+                      <label><b>Tipo de Prenda</b></label><br>
+                      <select>
+                         <option value="">Vestido</option>
+                         <option value="">Camisa</option>
+                         <option value="">Blusa</option>
+                      </select><br><br>
+                      <label><b>Descripción</b></label><br>
+                      <textarea name="" id="" cols="30" rows="7" placeholder="Breve Descripción"></textarea>
+                  </div>
+                  <div style="position: absolute;left: 40%;top:6%;">
+                      <label><b>Precio</b></label><br>
+                      <input type="text" placeholder="Precio"></input><br><br>
+                      <label><b>Stock</b></label><br>
+                      <input type="text" placeholder="Cantidad"></input><br><br>
+     
+                      <label><b>Talla</b> &nbsp</label>
+                      <select name="" id="">
+                          <option value="">XS</option>
+                          <option value="">M</option>
+                          <option value="">XL</option>
+                          <option value="">S</option>
+                       </select><br><br>
+                       
+     
+                       <label><b>Categoria</b> &nbsp</label>
+                       <select name="" id="">
+                           <option value="">Inferior</option>
+                           <option value="">Superior</option>
+                           <option value="">Vestido</option>
+                        </select><br><br>
+ 
+                        <div class="custom-control custom-switch">
+                         <input  type="checkbox" class="custom-control-input" id="switch1" name="example">
+                         <label class="custom-control-label" for="switch1"><b>Oferta</b></label>
+                       </div>
+                       <div id="des" style="position: relative; display: none;">
+                           <label for=""><b>Descuento</b> &nbsp</label>
+                           <input type="text" placeholder="%" style="width: 35px;">
+                           <label> <b>&nbsp- &nbsp Precio con Descuento &nbsp</b></label>
+                           <input type="text" value="400" style="width: 43px;">
+                       </div>
+                  </div>
+                  <div style="position: absolute;top: 20%;left: 70%;">
+                      <label for="" style="margin-left: 45px;"><b>Subir Imagen</b></label>
+                      <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
+                  </div>
+              </div>
+             
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button id="clos"type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
 <script>
    $(document).ready(function () {
@@ -434,9 +521,13 @@ background-color: green;">AGREGAR</button>
        });
 
        $("#switch1").on("click",function(){
-           var a = document.querySelector("#des")
-           a.style.display = "block";
-            
+           var a = document.querySelector("#des");
+           b = a.style.display;
+           if(b == "none"){
+                a.style.display = "block";
+           }else{
+                a.style.display = "none";
+           }   
        });
    });
 </script>
