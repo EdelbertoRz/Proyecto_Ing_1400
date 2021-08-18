@@ -7,6 +7,23 @@ const correo = document.getElementById('correo');
 
 cargarEventos();
 
+
+
+function alerta(){
+    var dir;
+    var opcion = confirm("¿Desea cambiar la dirección de su entrega?");
+    if (opcion == true) {
+        //Capturamos la nueva dirección
+        dir = prompt("¿Cuál seria su nueva dirección?", "");
+        //Detectamos si el usuario ingreso un valor
+        if (dir == null){
+            alert("Ingrese una dirección");
+        }
+	} else {
+        window.location.href="Eleccion.html";
+	}
+}
+
 function cargarEventos() {
     document.addEventListener('DOMContentLoaded', compra.leerLocalStorageCompra());
 
