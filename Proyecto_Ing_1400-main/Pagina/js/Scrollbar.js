@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#lista-carrito").DataTable({
-      "scrollY":"500px",
+      "scrollY":"300px",
       "scrollCollapse":true,
       "paging":false
   });

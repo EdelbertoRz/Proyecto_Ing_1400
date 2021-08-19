@@ -104,6 +104,15 @@ $(document).ready(function()
       $('#wb_intro,#wb_introLayoutGrid,#wb_LayoutGrid1,#wb_contact').css('background-attachment', 'scroll');
    }
    $('img[data-src]').lazyload();
+
+   $("#12").on('click',function(e){
+      for(var i=0;i<sessionStorage.length;i++){
+            var a=sessionStorage.key(i);
+            var b=sessionStorage.getItem(a);
+            console.log(a,b);
+      }
+
+   });
 });
 </script>
 </head>
@@ -136,7 +145,7 @@ $(document).ready(function()
 <a href="./Menu.html" class="nav-link">CERRAR SESION</a>
 </li>
 <li class="nav-item">
-<a href="#contact" class="nav-link">SOBRE NOSOTROS</a>
+      <a href="#contact" class="nav-link">SOBRE NOSOTROS</a>
 </li>
 </ul>
 </div>

@@ -102,11 +102,18 @@
 
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
+                                <!--
+                                    Esto de referenciar al menu va depender de la sesion que tengamos creada
+                                    por si es admin o cliente normal, sabremos a que menu enviarlo
+                                -->
                                 <a href="Menu.html" class="btn btn-info btn-block">Seguir comprando</a>
                             </div>
                             
                             <div class="col-xs-12 col-md-4">
-                                <a href="Eleccion.html" input type="submit"  class="btn btn-success btn-block">Realizar compra</a>
+                                <!--
+                                   <a href="Eleccion.html" input type="submit"  class="btn btn-success btn-block">Realizar compra</a> 
+                                -->
+                                <a onclick="alerta()" input type="submit"  class="btn btn-success btn-block">Realizar compra</a>
                             </div>
                         </div>
                     </form>
@@ -124,6 +131,72 @@
 
     </div>
 
+    <div class="container1">
+ 
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Producto</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+                  <div>
+                      <div>
+                          <label><b>Código del Producto</b></label><br>
+                          <label for="">02311</label><br><br>
+         
+                          <label><b>Tipo de Prenda</b></label><br>
+                          <label for="">Short</label><br><br>
+                          <label><b>Descripción</b></label><br>
+                          <p>
+                              lbajshbdkhas<br>
+                              jhbasjhdjahs<br>
+                              jhasjd
+                          </p>
+                          
+                      </div>
+                      <div style="position: absolute;left: 45%;top:5%;">
+                          <label><b>Precio</b></label><br>
+                          <label for="">350</label><br><br>
+                          
+                          <label><b>Estado</b></label><br>
+                          <label for="">Disponible</label><br><br>
+                          
+         
+                          <label><b>Talla</b> &nbsp</label><br>
+                          <input type="radio" >
+                          <label>S</label>
+                          <input type="radio">
+                          <label>XS</label>
+
+                      </div>
+                      <div style="position: absolute;top: 5%;left: 65%;">
+                          
+                          <div style="background-color: rgb(197, 195, 195);width: 160px;height: 185px;position:absolute;top: 30px;"></div>
+                      </div>
+                  </div>
+                 
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button id="clos" type="button" class="btn btn-danger agregar-c" data-dismiss="modal">Agregar a Carrito</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+ 
+    <button onclick="alerta()">Clicka para mostrar mensaje</button>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sweetalert2.min.js"></script>
