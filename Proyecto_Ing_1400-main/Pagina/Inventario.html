@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/Diseño.css" rel="stylesheet">
+<link href="css/DropImage.css" rel="stylesheet">
 <link href="css/Inventario.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 
@@ -358,7 +359,7 @@ background-color: green;">AGREGAR</button>
                      <label><b>Descripción</b></label><br>
                      <textarea name="" id="" cols="30" rows="7" placeholder="Breve Descripción"></textarea>
                  </div>
-                 <div style="position: absolute;left: 40%;top:6%;">
+                 <div style="position: absolute;left: 37%;top:6%;">
                      <label><b>Precio</b></label><br>
                      <input type="text" placeholder="Precio"></input><br><br>
                      <label><b>Stock</b></label><br>
@@ -391,10 +392,23 @@ background-color: green;">AGREGAR</button>
                           <input type="text" value="400" style="width: 43px;">
                       </div>
                  </div>
-                 <div style="position: absolute;top: 20%;left: 70%;">
-                     <label for="" style="margin-left: 45px;"><b>Subir Imagen</b></label>
-                     <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
-                 </div>
+                 <div class="file-upload" style="position: absolute;;top: 5%;left: 67%;">
+                    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Agregar Imagen</button>
+                  
+                    <div class="image-upload-wrap">
+                      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                      <div class="drag-text">
+                        <h3>Arrastra o selecciona la imagen</h3>
+                      </div>
+                    </div>
+                    <div class="file-upload-content">
+                      <img class="file-upload-image" src="#" alt="your image" />
+                      <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Eliminar Imagen</button>
+                      </div>
+                    </div>
+                  </div>
+                 
              </div>
             
          </div>
@@ -473,9 +487,9 @@ background-color: green;">AGREGAR</button>
                        </div>
                   </div>
                   <div style="position: absolute;top: 20%;left: 70%;">
-                      <label for="" style="margin-left: 45px;"><b>Subir Imagen</b></label>
-                      <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
-                  </div>
+                    <label for="" style="margin-left: 45px;"><b>Subir Imagen</b></label>
+                    <div style="background-color: rgb(197, 195, 195);width: 190px;height: 140px;position:absolute;top: 45px;"></div>
+                </div>
               </div>
              
           </div>
@@ -492,6 +506,40 @@ background-color: green;">AGREGAR</button>
   </div>
 
 <script>
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                $('.image-upload-wrap').hide();
+
+                $('.file-upload-image').attr('src', e.target.result);
+                $('.file-upload-content').show();
+
+                
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+
+        $('.image-upload-wrap').bind('dragover', function () {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+                $('.image-upload-wrap').removeClass('image-dropping');
+        });
+        
    $(document).ready(function () {
        $('#tablax').DataTable({
            language: {
