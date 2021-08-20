@@ -990,14 +990,14 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    color: #FFFFFF;
-   font-family: Arial;
+   font-family: Comic Sans MS;
    font-weight: bold;
    font-style: normal;
    font-size: 24px;
    box-sizing: border-box;
    padding: 0px 0px 20px 0px;
    margin: 0;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
 }
 #Label7
@@ -1005,15 +1005,15 @@ input:focus, textarea:focus, select:focus
    border: 0px solid #000000;
    background-color: transparent;
    background-image: none;
-   color: #FFFFFF;
-   font-family: Arial;
+   color: #ffed48;
+   font-family: Comic Sans MS;
    font-weight: bold;
    font-style: normal;
    font-size: 24px;
    box-sizing: border-box;
    padding: 0px 0px 20px 0px;
    margin: 0;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
 }
 #Label8
@@ -1022,14 +1022,14 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    color: #FFFFFF;
-   font-family: Arial;
+   font-family: Comic Sans MS;
    font-weight: bold;
    font-style: normal;
    font-size: 24px;
    box-sizing: border-box;
    padding: 0px 0px 20px 0px;
    margin: 0;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
 }
 #Label9
@@ -1037,15 +1037,15 @@ input:focus, textarea:focus, select:focus
    border: 0px solid #000000;
    background-color: transparent;
    background-image: none;
-   color: #FFFFFF;
-   font-family: Arial;
+   color: #ffed48;
+   font-family: Comic Sans MS;
    font-weight: bold;
    font-style: normal;
    font-size: 24px;
    box-sizing: border-box;
    padding: 0px 0px 20px 0px;
    margin: 0;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
 }
 #Label10
@@ -1054,13 +1054,13 @@ input:focus, textarea:focus, select:focus
    background-color: transparent;
    background-image: none;
    color: #FFFFFF;
-   font-family: Arial;
+   font-family: Comic Sans MS;
    font-weight: bold;
    font-style: normal;
    font-size: 24px;
    box-sizing: border-box;
    padding: 0px 0px 20px 0px;
    margin: 0;
-   text-align: left;
+   text-align: center;
    vertical-align: top;
 }
