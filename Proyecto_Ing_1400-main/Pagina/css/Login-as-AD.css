@@ -263,6 +263,22 @@ input:focus, textarea:focus, select:focus
    transform-origin: bottom;
    transform: rotateY(0deg);
 }
+
+#contactButton2
+{
+   border: 1px solid #FFFFFF;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #403832;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 15px;
+   padding: 1px 1px 6px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
 #wb_LayoutGrid2
 {
    clear: both;
