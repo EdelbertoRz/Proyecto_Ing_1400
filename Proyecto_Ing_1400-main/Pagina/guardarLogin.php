@@ -15,18 +15,20 @@
  $apellido=$_POST['Apellido'];
  $nombre_usuario=$_POST['Usuario'];
  $passwd=$_POST['Contraseña'];
- $confi_passwd=$_POST['Conf_Contraseña'];
+ $conf_passwd=$_POST['Conf_Contraseña'];
  $direccion=$_POST['Direccion'];
+ $ciudad=$_POST['Ciudad'];
  $telefono=$_POST['Telefono'];
  $correo=$_POST['Correo_electronico'];
  
  //hacemos la sentencia de sql
-  $sql="INSERT INTO usu_dire VALUES('$nombre',
+  $sql="INSERT INTO usuarios VALUES('$nombre',
            '$apellido',
            '$nombre_usuario',
            '$passwd',
-           '$confi_passwd',
-           '$direccion',
+           '$conf_passwd',
+           '$direccion'
+            '$ciudad',
            '$telefono',
            '$correo')";
  //ejecutamos la sentencia de sql

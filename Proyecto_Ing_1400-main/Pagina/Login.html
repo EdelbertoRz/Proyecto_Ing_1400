@@ -39,7 +39,14 @@
             var ps=document.getElementById('Editbox1').value;
             sessionStorage.setItem("usuario",us); //ó sessionStorage[producto]=precio
             sessionStorage.setItem("password",ps); //ó sessionStorage[producto]=precio
-
+            
+            $.post("corroborar.php",{
+               user:us,password:ps
+               }).done(function(data){
+               console.log(data);   
+               
+  
+        });
          });
          $("").on('click',function(e){
             for(var i=0;i<sessionStorage.length;i++){
