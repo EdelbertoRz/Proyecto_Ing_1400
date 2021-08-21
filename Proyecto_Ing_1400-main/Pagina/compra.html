@@ -19,6 +19,7 @@
 
 <body>
     <header>
+        <!--Barra de navegacion, muestra el titulo de la pagina y redirige a la pagina principal-->
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -41,6 +42,7 @@
                    
                     <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
                     <form id="procesar-pago">
+                        <!--Campo para ingreso del nombre del cliente-->
                         <div class="form-group row">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
@@ -48,6 +50,7 @@
                                     placeholder="Ingresa nombre cliente" name="destinatario">
                             </div>
                         </div>
+                        <!--Campo para ingreso del correo del cliente-->
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
@@ -56,6 +59,7 @@
                         </div>
 
                         <div id="carrito" class="form-group table-responsive" >
+                            <!--Tabla que contiene datos de los campos Imagen, nombre, precio, cantidad, sub total, IGV y TOTAL-->
                             <table class="form-group table" id="lista-compra" >
                                 <thead>
                                     <tr>
